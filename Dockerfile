@@ -7,7 +7,7 @@ VOLUME /app/data
 
 COPY . .
 
-RUN deno install -A
+RUN deno install --allow-import && deno cache --allow-import main.ts
 
 CMD [ "deno", "task", "run" ]
 
