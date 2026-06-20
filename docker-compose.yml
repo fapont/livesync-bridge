@@ -1,7 +1,6 @@
-version: "2.1"
 services:
   bridge:
-    build: .
+    image: ghcr.io/fapont/livesync-bridge:v1.0.0
     volumes:
       - ./data:/app/data
       - ./dat:/app/dat
